@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# temp workspace
+tmp/
+
+# editor backups
+*.swp
+*.swo

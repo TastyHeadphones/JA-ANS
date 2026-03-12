@@ -1,5 +1,5 @@
-*.pdf filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
 留学生のための漢字の教科書初級300[[:space:]]--[[:space:]]佐藤尚子[[:space:]]佐々木仁子[[:space:]]--[[:space:]]留学生のための漢字の教科書[[:space:]]初級[[:space:]]2.pdf filter=lfs diff=lfs merge=lfs -text
