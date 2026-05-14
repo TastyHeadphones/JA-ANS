@@ -31,6 +31,7 @@
 ## 4. 课本总结
 
 - `MINNA NO NIHONGO INTERMEDIATE 1`
+- `中級から学ぶ日本語 テーマ別`（第1〜10课）
 
 ## 整理原则
 
