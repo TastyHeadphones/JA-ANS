@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>JLPT N2 Listening A3 Duplex Cheat Sheet</title>
+<style>
+  @page { size: A3 landscape; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #f7f4ec; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "PingFang SC", "Songti SC", Arial, sans-serif;
+    color: #1f2528;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 420mm;
+    height: 297mm;
+    padding: 8.5mm;
+    page-break-after: always;
+    background:
+      linear-gradient(90deg, rgba(44, 105, 141, 0.07) 0 1px, transparent 1px 102mm),
+      linear-gradient(180deg, rgba(44, 105, 141, 0.05) 0 1px, transparent 1px 24mm),
+      #fbfaf6;
+    overflow: hidden;
+  }
+  .page:last-child { page-break-after: auto; }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6mm;
+    align-items: end;
+    padding: 0 0 4.5mm;
+    border-bottom: 0.8mm solid #263238;
+  }
+  h1 {
+    margin: 0;
+    font-size: 22pt;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+  .kicker {
+    margin: 0 0 1.5mm;
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0f5f73;
+  }
+  .meta {
+    font-size: 7.5pt;
+    line-height: 1.35;
+    text-align: right;
+    color: #3b474d;
+  }
+  .grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4mm;
+    margin-top: 4mm;
+  }
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr 1fr;
+    gap: 4mm;
+    margin-top: 4mm;
+  }
+  .masonry {
+    column-count: 4;
+    column-gap: 4mm;
+    margin-top: 4mm;
+  }
+  .masonry section.block {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 4mm;
+  }
+  .span2 { grid-column: span 2; }
+  .span3 { grid-column: span 3; }
+  section.block, article.type-card {
+    border: 0.35mm solid #263238;
+    border-radius: 2mm;
+    background: rgba(255,255,255,0.88);
+    padding: 3mm;
+    break-inside: avoid;
+  }
+  section.block h2, article.type-card h3 {
+    margin: 0 0 2mm;
+    font-size: 10.5pt;
+    line-height: 1.1;
+    letter-spacing: 0;
+  }
+  section.block h2 {
+    padding-bottom: 1.5mm;
+    border-bottom: 0.25mm solid #a9b4b8;
+  }
+  .type-head {
+    display: grid;
+    grid-template-columns: 8mm 1fr;
+    gap: 2mm;
+    align-items: center;
+  }
+  .type-num {
+    display: grid;
+    place-items: center;
+    width: 7mm;
+    height: 7mm;
+    border-radius: 50%;
+    background: #263238;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 800;
+  }
+  p, li, td, th {
+    font-size: 7.15pt;
+    line-height: 1.38;
+    letter-spacing: 0;
+  }
+  p { margin: 0 0 1.8mm; }
+  .sub {
+    color: #506066;
+    font-weight: 700;
+  }
+  ul {
+    margin: 0;
+    padding-left: 4.5mm;
+  }
+  li { margin: 0 0 1mm; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1mm 0 1.8mm;
+  }
+  th, td {
+    vertical-align: top;
+    border-bottom: 0.2mm solid #d7dddf;
+    padding: 1mm 1.2mm;
+  }
+  th {
+    width: 18mm;
+    color: #0f5f73;
+    text-align: left;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .tight th, .tight td { padding: 0.75mm 0.9mm; }
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.1mm;
+    margin-top: 1.5mm;
+  }
+  .pills span, .tag {
+    border: 0.2mm solid #9aa9ae;
+    border-radius: 1.2mm;
+    padding: 0.65mm 1.1mm;
+    background: #eef4f2;
+    font-size: 6.6pt;
+    line-height: 1.35;
+  }
+  .warn {
+    background: #fff2db;
+    border-left: 1.2mm solid #d47728;
+    padding: 1.8mm;
+    margin-top: 1.8mm;
+  }
+  .check {
+    background: #eaf3f7;
+    border-left: 1.2mm solid #267a96;
+    padding: 1.8mm;
+    margin-top: 1.8mm;
+  }
+  .jp {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    word-break: keep-all;
+  }
+  ruby { ruby-position: over; }
+  rt {
+    font-size: 0.48em;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .mini {
+    font-size: 6.45pt;
+    color: #526168;
+  }
+  .small-table th { width: 23mm; }
+  .note-template {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1mm;
+    margin-top: 1mm;
+  }
+  .note-template div {
+    min-height: 9mm;
+    border: 0.25mm dashed #7e8c91;
+    padding: 1mm;
+    font-size: 6.5pt;
+    background: #fbfbf8;
+  }
+  footer {
+    margin-top: 3mm;
+    font-size: 6pt;
+    color: #647176;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <header>
+    <div>
+      <p class="kicker">JLPT N2 <ruby>聴解<rt>ちょうかい</rt></ruby> - A3 正面</p>
+      <h1>N2 听力重点总览：题型、信号词、陷阱、临场流程</h1>
+    </div>
+    <div class="meta">
+      官方框架：N2 听力约 50 分钟；题型为 5 类。<br>
+      题数以当次试卷为准，听力时间也可能随录音长度略有差异。
+    </div>
+  </header>
+
+  <div class="grid4">
+    <section class="block">
+      <h2>1. 全场总原则</h2>
+      <ul><li>先抓题目问什么：人、事、理由、时间、态度、下一步。</li><li>不要“听到词就选”。JLPT 听力常把所有选项都提到，答案在最终判断。</li><li>日语结论常在句尾；否定、转折、意志、婉拒都可能藏在最后。</li><li>主语省略时先问：谁说的？谁要做？是本人、对方、第三者还是公司？</li><li>每听到转折或更改，立刻刷新笔记，旧信息降级为干扰。</li></ul>
+      <div class="warn">
+        <p><b>核心口诀：</b>听“最后怎么定”，不是听“中间出现过什么”。</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>2. 临场 20 秒预读法</h2>
+      <ul><li>有选项时先圈差异：动作、对象、时间、地点、数量、说话人。</li><li>把疑问词写在题旁：为什么、哪一个、先做什么、谁的意见。</li><li>选项太长时只记关键词，不翻译整句。</li><li>无选项题先听首句和尾句，转折后优先。</li><li>不回放训练：错了也继续，保持下一题节奏。</li></ul>
+      <p class="mini">常见节奏：问题说明 - 预读 - 音声 - 设问 - 作答。具体以考场播放为准。</p>
+    </section>
+
+    <section class="block">
+      <h2>3. 答案雷达</h2>
+      <table class="small-table">
+        <tr><th>反转</th><td><div class="pills"><span><span class="jp" lang="ja">でも</span></span><span><span class="jp" lang="ja">しかし</span></span><span><span class="jp" lang="ja">ただ</span></span><span><span class="jp" lang="ja"><ruby>実<rt>じつ</rt></ruby>は</span></span><span><span class="jp" lang="ja">やっぱり</span></span></div></td></tr><tr><th>真实理由</th><td><div class="pills"><span><span class="jp" lang="ja"><ruby>本当<rt>ほんとう</rt></ruby>は</span></span><span><span class="jp" lang="ja"><ruby>正直<rt>しょうじき</rt></ruby>に<ruby>言<rt>い</rt></ruby>うと</span></span><span><span class="jp" lang="ja">というのは</span></span><span><span class="jp" lang="ja">だって</span></span></div></td></tr><tr><th>顺序</th><td><div class="pills"><span><span class="jp" lang="ja">まず</span></span><span><span class="jp" lang="ja"><ruby>先<rt>さき</rt></ruby>に</span></span><span><span class="jp" lang="ja">その<ruby>前<rt>まえ</rt></ruby>に</span></span><span><span class="jp" lang="ja">〜てから</span></span><span><span class="jp" lang="ja"><ruby>後<rt>あと</rt></ruby>で</span></span></div></td></tr><tr><th>最终决定</th><td><div class="pills"><span><span class="jp" lang="ja"><ruby>結局<rt>けっきょく</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>最終的<rt>さいしゅうてき</rt></ruby>に</span></span><span><span class="jp" lang="ja">じゃあ〜にする</span></span><span><span class="jp" lang="ja">〜ことになった</span></span></div></td></tr>
+      </table>
+    </section>
+
+    <section class="block">
+      <h2>4. 排除雷达</h2>
+      <table class="small-table">
+        <tr><th>已完成</th><td><div class="pills"><span><span class="jp" lang="ja">もう〜た</span></span><span><span class="jp" lang="ja"><ruby>済<rt>す</rt></ruby>んだ</span></span><span><span class="jp" lang="ja"><ruby>終<rt>お</rt></ruby>わった</span></span></div></td></tr><tr><th>不用做</th><td><div class="pills"><span><span class="jp" lang="ja">〜なくてもいい</span></span><span><span class="jp" lang="ja">〜は<ruby>要<rt>い</rt></ruby>らない</span></span><span><span class="jp" lang="ja">〜しないで</span></span></div></td></tr><tr><th>别人做</th><td><div class="pills"><span><span class="jp" lang="ja"><ruby>私<rt>わたし</rt></ruby>がやる</span></span><span><span class="jp" lang="ja">こちらで<ruby>対応<rt>たいおう</rt></ruby>する</span></span><span><span class="jp" lang="ja"><ruby>担当<rt>たんとう</rt></ruby>が<ruby>連絡<rt>れんらく</rt></ruby>する</span></span></div></td></tr><tr><th>计划更改</th><td><div class="pills"><span><span class="jp" lang="ja">〜じゃなくて</span></span><span><span class="jp" lang="ja">〜に<ruby>変更<rt>へんこう</rt></ruby></span></span><span><span class="jp" lang="ja">やっぱり〜で</span></span></div></td></tr>
+      </table>
+      <p class="mini">听到这些词后，选项里的旧动作、旧数字、旧负责人要重新判断。</p>
+    </section>
+
+    
+    <article class="type-card">
+      <div class="type-head">
+        <span class="type-num">1</span>
+        <h3><ruby>問題<rt>もんだい</rt></ruby>1 <ruby>課題理解<rt>かだいりかい</rt></ruby></h3>
+      </div>
+      <p class="sub">目标：解决具体任务，判断接下来最合适的动作。</p>
+      <table class="tight">
+        <tr><th>核心</th><td>问“这之后先做什么”“必须做什么”。看动作是否还没做、是否由题目中的人来做。</td></tr>
+        <tr><th>听法</th><td>边听边删：已完成、别人负责、不用做、之后才做。抓 <span class="jp" lang="ja">まず</span>、<span class="jp" lang="ja"><ruby>先<rt>さき</rt></ruby>に</span>、<span class="jp" lang="ja">その<ruby>前<rt>まえ</rt></ruby>に</span>。</td></tr>
+        <tr><th>陷阱</th><td>常先说 A 后改 B；或 A 很重要但要 <span class="jp" lang="ja"><ruby>後<rt>あと</rt></ruby>で</span> 才做。</td></tr>
+      </table>
+      <div class="pills"><span><span class="jp" lang="ja"><ruby>何<rt>なに</rt></ruby>をしますか</span></span><span><span class="jp" lang="ja">しなければなりません</span></span><span><span class="jp" lang="ja">〜ておいて</span></span><span><span class="jp" lang="ja">〜<ruby>次第<rt>しだい</rt></ruby></span></span><span><span class="jp" lang="ja">とりあえず</span></span></div>
+    </article>
+
+    
+    <article class="type-card">
+      <div class="type-head">
+        <span class="type-num">2</span>
+        <h3><ruby>問題<rt>もんだい</rt></ruby>2 ポイント<ruby>理解<rt>りかい</rt></ruby></h3>
+      </div>
+      <p class="sub">目标：带着指定问题听，抓一个重点。</p>
+      <table class="tight">
+        <tr><th>核心</th><td>预读时圈问题点：理由、时间、心情、评价、最终选择。</td></tr>
+        <tr><th>听法</th><td>理由题听 <span class="jp" lang="ja">〜から</span>、<span class="jp" lang="ja">〜ので</span>、<span class="jp" lang="ja">というのは</span>；时间数量题听更改和合计；心情题听评价词。</td></tr>
+        <tr><th>陷阱</th><td>“表面理由”后可能有 <span class="jp" lang="ja"><ruby>本当<rt>ほんとう</rt></ruby>は</span> 或 <span class="jp" lang="ja"><ruby>実<rt>じつ</rt></ruby>は</span> 推翻。</td></tr>
+      </table>
+      <div class="pills"><span><span class="jp" lang="ja"><ruby>理由<rt>りゆう</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>気持<rt>きも</rt></ruby>ち</span></span><span><span class="jp" lang="ja"><ruby>評価<rt>ひょうか</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>変更<rt>へんこう</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>合わせ<rt>あわせ</rt></ruby>て</span></span></div>
+    </article>
+
+    
+    <article class="type-card">
+      <div class="type-head">
+        <span class="type-num">3</span>
+        <h3><ruby>問題<rt>もんだい</rt></ruby>3 <ruby>概要理解<rt>がいようりかい</rt></ruby></h3>
+      </div>
+      <p class="sub">目标：抓整体主旨、说话人观点和态度。</p>
+      <table class="tight">
+        <tr><th>核心</th><td>不要追所有细节。首句定主题，转折后定观点，尾句定结论。</td></tr>
+        <tr><th>听法</th><td>听 <span class="jp" lang="ja"><ruby>大切<rt>たいせつ</rt></ruby>なのは</span>、<span class="jp" lang="ja"><ruby>必要<rt>ひつよう</rt></ruby>がある</span>、<span class="jp" lang="ja">〜べきだ</span>、<span class="jp" lang="ja">つまり</span>。</td></tr>
+        <tr><th>陷阱</th><td>选项只覆盖例子或细节时通常不对；主旨题要选能统摄全文的说法。</td></tr>
+      </table>
+      <div class="pills"><span><span class="jp" lang="ja"><ruby>何<rt>なに</rt></ruby>について</span></span><span><span class="jp" lang="ja"><ruby>言<rt>い</rt></ruby>いたいこと</span></span><span><span class="jp" lang="ja"><ruby>考<rt>かんが</rt></ruby>え</span></span><span><span class="jp" lang="ja"><ruby>要<rt>よう</rt></ruby>するに</span></span><span><span class="jp" lang="ja"><ruby>一方<rt>いっぽう</rt></ruby>で</span></span></div>
+    </article>
+
+    
+    <article class="type-card">
+      <div class="type-head">
+        <span class="type-num">4</span>
+        <h3><ruby>問題<rt>もんだい</rt></ruby>4 <ruby>即時応答<rt>そくじおうとう</rt></ruby></h3>
+      </div>
+      <p class="sub">目标：短句后选最自然回应，重点是话语功能。</p>
+      <table class="tight">
+        <tr><th>核心</th><td>先判断对方在请求、许可、邀请、确认、感谢、道歉、抱怨、后悔还是提醒。</td></tr>
+        <tr><th>听法</th><td>抓句尾：<span class="jp" lang="ja">〜てもらえますか</span>、<span class="jp" lang="ja">〜でしょうか</span>、<span class="jp" lang="ja">〜んですが</span>、<span class="jp" lang="ja">〜っけ</span>、<span class="jp" lang="ja">〜ばよかった</span>。</td></tr>
+        <tr><th>陷阱</th><td>回应语法通顺但意图不对会错；敬语场景要选礼貌层级一致的回答。</td></tr>
+      </table>
+      <div class="pills"><span><span class="jp" lang="ja"><ruby>承知<rt>しょうち</rt></ruby>しました</span></span><span><span class="jp" lang="ja"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です</span></span><span><span class="jp" lang="ja"><ruby>残念<rt>ざんねん</rt></ruby>です</span></span><span><span class="jp" lang="ja"><ruby>助<rt>たす</rt></ruby>かります</span></span></div>
+    </article>
+
+    
+    <article class="type-card">
+      <div class="type-head">
+        <span class="type-num">5</span>
+        <h3><ruby>問題<rt>もんだい</rt></ruby>5 <ruby>統合理解<rt>とうごうりかい</rt></ruby></h3>
+      </div>
+      <p class="sub">目标：整合长信息，比较多条件，常要分别判断两个人。</p>
+      <table class="tight">
+        <tr><th>核心</th><td>信息播报时画 A/B/C/D 小表；讨论时给男、女或甲、乙分别记最终选择。</td></tr>
+        <tr><th>听法</th><td>优先记约束：<span class="jp" lang="ja">〜は<ruby>外<rt>はず</rt></ruby>せない</span>、预算、时间、距离、条件优先级。</td></tr>
+        <tr><th>陷阱</th><td>两人可能选不同方案；<span class="jp" lang="ja"><ruby>私<rt>わたし</rt></ruby>は〜、あなたは？</span> 后要分开记。</td></tr>
+      </table>
+      <div class="pills"><span><span class="jp" lang="ja"><ruby>比較<rt>ひかく</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>条件<rt>じょうけん</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>優先<rt>ゆうせん</rt></ruby></span></span><span><span class="jp" lang="ja">やっぱり</span></span><span><span class="jp" lang="ja">〜にしよう</span></span></div>
+    </article>
+
+    <section class="block span2">
+      <h2>5. 典型错因 - 对照排查</h2>
+      <table>
+        <tr><th>听到就选</th><td>把被提到的词当答案，没有等最终决定。训练：每题写“最后一句关键转折”。</td></tr><tr><th>主语错</th><td>日语省略主语，尊敬语和自谦语没有听出谁做。训练：每轮对话标男、女、店员、老师、公司。</td></tr><tr><th>否定错</th><td>没听完整句尾：<span class="jp" lang="ja">〜わけではない</span>、<span class="jp" lang="ja">〜とは<ruby>限<rt>かぎ</rt></ruby>らない</span>、<span class="jp" lang="ja">〜なくてもいい</span>。</td></tr><tr><th>数字错</th><td>旧数字后有 <span class="jp" lang="ja">やっぱり</span>、<span class="jp" lang="ja"><ruby>変更<rt>へんこう</rt></ruby></span>、<span class="jp" lang="ja"><ruby>合わせ<rt>あわせ</rt></ruby>て</span>、<span class="jp" lang="ja">〜を<ruby>除<rt>のぞ</rt></ruby>いて</span>。</td></tr><tr><th>语气错</th><td>把 <span class="jp" lang="ja">ちょっと…</span>、<span class="jp" lang="ja"><ruby>検討<rt>けんとう</rt></ruby>します</span> 当真同意；实际多是婉拒或保留。</td></tr>
+      </table>
+    </section>
+
+    <section class="block span2">
+      <h2>6. 三步笔记模板</h2>
+      <ul><li>任务题：动作 - 负责人 - 顺序 - 是否已完成。</li><li>理由题：表面理由 - 转折 - 真实理由。</li><li>综合题：方案 - 优点 - 缺点 - 谁最后选。</li></ul>
+      <div class="note-template">
+        <div>A: 条件/优缺点</div>
+        <div>B: 条件/优缺点</div>
+        <div>男/甲: 最后选择</div>
+        <div>女/乙: 最后选择</div>
+      </div>
+      <div class="check">
+        <p><b>作答前 1 秒：</b>这是不是问“先做”？是不是问“谁”？是不是问“理由”？选项是否只是出现过而非结论？</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <span>Source basis: JLPT official test sections and N2 item-purpose PDF; content is an original summary, not copied test material.</span>
+    <span>Page 1 / 2</span>
+  </footer>
+</section>
+
+<section class="page">
+  <header>
+    <div>
+      <p class="kicker">JLPT N2 <ruby>聴解<rt>ちょうかい</rt></ruby> - A3 反面</p>
+      <h1>高频表达库：缩约、敬语、即答、数字、潜台词</h1>
+    </div>
+    <div class="meta">
+      打印建议：A3 横向，双面，长边翻转。<br>
+      日文汉字已用 HTML ruby 标注读音。
+    </div>
+  </header>
+
+  <div class="masonry">
+    <section class="block">
+      <h2>1. 口语缩约 - 秒还原</h2>
+      <table>
+        <tr><th><span class="jp" lang="ja">〜ちゃう / 〜じゃう</span></th><td><span class="jp" lang="ja">〜てしまう</span>：完了、遗憾、失误</td></tr><tr><th><span class="jp" lang="ja">〜とく</span></th><td><span class="jp" lang="ja">〜ておく</span>：预先做</td></tr><tr><th><span class="jp" lang="ja">〜てる / 〜でる</span></th><td><span class="jp" lang="ja">〜ている</span>：正在、状态</td></tr><tr><th><span class="jp" lang="ja">〜なきゃ</span></th><td><span class="jp" lang="ja">〜なければならない</span>：必须</td></tr><tr><th><span class="jp" lang="ja">〜なくちゃ</span></th><td><span class="jp" lang="ja">〜なくてはならない</span>：必须</td></tr><tr><th><span class="jp" lang="ja">〜ちゃだめ</span></th><td><span class="jp" lang="ja">〜てはだめ</span>：不可以</td></tr><tr><th><span class="jp" lang="ja">〜たって</span></th><td><span class="jp" lang="ja">〜ても</span>：即使</td></tr><tr><th><span class="jp" lang="ja">〜だって</span></th><td><span class="jp" lang="ja">〜でも</span>：也、即使</td></tr><tr><th><span class="jp" lang="ja">〜とこ</span></th><td><span class="jp" lang="ja">〜ところ</span>：正要、地方</td></tr><tr><th><span class="jp" lang="ja">〜っけ</span></th><td>确认记忆：是……来着？</td></tr><tr><th><span class="jp" lang="ja">〜じゃん</span></th><td><span class="jp" lang="ja">〜じゃない</span>：不是……吗</td></tr><tr><th><span class="jp" lang="ja">〜かも</span></th><td><span class="jp" lang="ja">〜かもしれない</span>：也许</td></tr>
+      </table>
+      <p class="mini">听力里很多答案不是词汇难，而是缩约没还原。</p>
+    </section>
+
+    <section class="block">
+      <h2>2. 敬语判断谁做</h2>
+      <table>
+        <tr><th><span class="jp" lang="ja"><ruby>行<rt>い</rt></ruby>く / <ruby>来<rt>く</rt></ruby>る / いる</span></th><td><span class="jp" lang="ja">いらっしゃる</span> = 对方；<span class="jp" lang="ja"><ruby>伺<rt>うかが</rt></ruby>う / <ruby>参<rt>まい</rt></ruby>る</span> = 我方</td></tr><tr><th><span class="jp" lang="ja"><ruby>言<rt>い</rt></ruby>う</span></th><td><span class="jp" lang="ja">おっしゃる</span> = 对方；<span class="jp" lang="ja"><ruby>申<rt>もう</rt></ruby>す</span> = 我方</td></tr><tr><th><span class="jp" lang="ja"><ruby>見<rt>み</rt></ruby>る</span></th><td><span class="jp" lang="ja">ご<ruby>覧<rt>らん</rt></ruby>になる</span> = 对方；<span class="jp" lang="ja"><ruby>拝見<rt>はいけん</rt></ruby>する</span> = 我方</td></tr><tr><th><span class="jp" lang="ja">する</span></th><td><span class="jp" lang="ja">なさる</span> = 对方；<span class="jp" lang="ja">いたす</span> = 我方</td></tr><tr><th><span class="jp" lang="ja"><ruby>食<rt>た</rt></ruby>べる / <ruby>飲<rt>の</rt></ruby>む</span></th><td><span class="jp" lang="ja"><ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がる</span> = 对方；<span class="jp" lang="ja">いただく</span> = 我方</td></tr><tr><th><span class="jp" lang="ja"><ruby>知<rt>し</rt></ruby>っている</span></th><td><span class="jp" lang="ja">ご<ruby>存<rt>ぞん</rt></ruby>じです</span> = 对方；<span class="jp" lang="ja"><ruby>存<rt>ぞん</rt></ruby>じております</span> = 我方</td></tr>
+      </table>
+      <div class="check">
+        <p><b>判断法：</b>尊敬语多是对方、上级、客人动作；自谦语多是自己或己方动作。</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>3. 商务固定句</h2>
+      <table>
+        <tr><th><span class="jp" lang="ja"><ruby>承知<rt>しょうち</rt></ruby>しました</span></th><td>明白了，照办。</td></tr><tr><th><span class="jp" lang="ja">かしこまりました</span></th><td>更郑重的“明白了”。</td></tr><tr><th><span class="jp" lang="ja"><ruby>少々<rt>しょうしょう</rt></ruby>お<ruby>待<rt>ま</rt></ruby>ちください</span></th><td>请稍等。</td></tr><tr><th><span class="jp" lang="ja">お<ruby>手数<rt>てすう</rt></ruby>ですが</span></th><td>麻烦您。</td></tr><tr><th><span class="jp" lang="ja"><ruby>恐<rt>おそ</rt></ruby>れ<ruby>入<rt>い</rt></ruby>りますが</span></th><td>不好意思，请问/请求前置。</td></tr><tr><th><span class="jp" lang="ja">〜していただけますか</span></th><td>能否请您……</td></tr><tr><th><span class="jp" lang="ja">あいにく</span></th><td>不巧，很遗憾地。</td></tr><tr><th><span class="jp" lang="ja"><ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ございません</span></th><td>非常抱歉。</td></tr>
+      </table>
+    </section>
+
+    <section class="block">
+      <h2>4. 数字时间陷阱</h2>
+      <table>
+        <tr><th><span class="jp" lang="ja"><ruby>四時<rt>よじ</rt></ruby></span></th><td>不是 <span class="jp" lang="ja">よんじ</span></td></tr><tr><th><span class="jp" lang="ja"><ruby>七時<rt>しちじ</rt></ruby></span></th><td>容易听成 <span class="jp" lang="ja"><ruby>一時<rt>いちじ</rt></ruby></span>，靠语境校正</td></tr><tr><th><span class="jp" lang="ja"><ruby>九時<rt>くじ</rt></ruby></span></th><td>不是 <span class="jp" lang="ja">きゅうじ</span></td></tr><tr><th><span class="jp" lang="ja"><ruby>一分<rt>いっぷん</rt></ruby> / <ruby>三分<rt>さんぷん</rt></ruby></span></th><td>注意促音和 ぷん。</td></tr><tr><th><span class="jp" lang="ja"><ruby>六分<rt>ろっぷん</rt></ruby> / <ruby>八分<rt>はっぷん</rt></ruby> / <ruby>十分<rt>じゅっぷん</rt></ruby></span></th><td>常考变音。</td></tr><tr><th><span class="jp" lang="ja"><ruby>一日<rt>ついたち</rt></ruby> / <ruby>二十日<rt>はつか</rt></ruby></span></th><td>日期特殊读法。</td></tr><tr><th><span class="jp" lang="ja"><ruby>一人<rt>ひとり</rt></ruby> / <ruby>二人<rt>ふたり</rt></ruby></span></th><td>人数特殊读法。</td></tr>
+      </table>
+      <p class="mini">数字后若听到“更改、合计、除外”，答案通常不是第一个数字。</p>
+    </section>
+
+    <section class="block">
+      <h2>5. 暧昧表达 = 潜台词</h2>
+      <table>
+        <tr><th><span class="jp" lang="ja">ちょっと…</span></th><td>多半是不方便、婉拒。</td></tr><tr><th><span class="jp" lang="ja"><ruby>考<rt>かんが</rt></ruby>えておきます</span></th><td>先考虑；考试里常是保留或不积极。</td></tr><tr><th><span class="jp" lang="ja"><ruby>検討<rt>けんとう</rt></ruby>します</span></th><td>研究一下；不等于答应。</td></tr><tr><th><span class="jp" lang="ja"><ruby>善処<rt>ぜんしょ</rt></ruby>します</span></th><td>会尽量处理；承诺度弱。</td></tr><tr><th><span class="jp" lang="ja">また<ruby>今度<rt>こんど</rt></ruby></span></th><td>这次不去/不做。</td></tr><tr><th><span class="jp" lang="ja"><ruby>都合<rt>つごう</rt></ruby>がつけば</span></th><td>条件允许才行，不确定。</td></tr><tr><th><span class="jp" lang="ja"><ruby>気持<rt>きも</rt></ruby>ちはありがたいんですが</span></th><td>感谢但大概率拒绝。</td></tr><tr><th><span class="jp" lang="ja">うーん、どうかな</span></th><td>不太赞成。</td></tr><tr><th><span class="jp" lang="ja">まあ、いいんじゃない</span></th><td>同意但热度低。</td></tr>
+      </table>
+    </section>
+
+    <section class="block">
+      <h2>6. 即答功能 - 自然回应</h2>
+      <table>
+        <tr><th>请求</th><td><span class="jp" lang="ja"><ruby>承知<rt>しょうち</rt></ruby>しました</span> / <span class="jp" lang="ja">やっておきます</span> / <span class="jp" lang="ja">すみません、<ruby>今<rt>いま</rt></ruby>ちょっと…</span></td></tr><tr><th>许可</th><td><span class="jp" lang="ja">どうぞ</span> / <span class="jp" lang="ja">かまいません</span> / <span class="jp" lang="ja">それはちょっと…</span></td></tr><tr><th>邀请</th><td><span class="jp" lang="ja">いいですね</span> / <span class="jp" lang="ja">また<ruby>今度<rt>こんど</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします</span></td></tr><tr><th>感谢</th><td><span class="jp" lang="ja">いえいえ</span> / <span class="jp" lang="ja">とんでもないです</span> / <span class="jp" lang="ja">お<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>てて<ruby>何<rt>なに</rt></ruby>よりです</span></td></tr><tr><th>道歉</th><td><span class="jp" lang="ja"><ruby>大丈夫<rt>だいじょうぶ</rt></ruby>です</span> / <span class="jp" lang="ja"><ruby>気<rt>き</rt></ruby>にしないでください</span> / <span class="jp" lang="ja">こちらこそ</span></td></tr><tr><th>提醒/批评</th><td><span class="jp" lang="ja">すみません、<ruby>気<rt>き</rt></ruby>をつけます</span> / <span class="jp" lang="ja"><ruby>確認<rt>かくにん</rt></ruby>します</span></td></tr><tr><th>后悔</th><td><span class="jp" lang="ja"><ruby>仕方<rt>しかた</rt></ruby>ないよ</span> / <span class="jp" lang="ja"><ruby>次<rt>つぎ</rt></ruby>は<ruby>気<rt>き</rt></ruby>をつけよう</span></td></tr>
+      </table>
+    </section>
+
+    <section class="block">
+      <h2>7. 句尾语法速听</h2>
+      <table>
+        <tr><th><span class="jp" lang="ja">〜ざるを<ruby>得<rt>え</rt></ruby>ない</span></th><td>不得不；不是想做。</td></tr><tr><th><span class="jp" lang="ja">〜ないこともない</span></th><td>不是不能，弱肯定。</td></tr><tr><th><span class="jp" lang="ja">〜に<ruby>限<rt>かぎ</rt></ruby>らず</span></th><td>不限于。</td></tr><tr><th><span class="jp" lang="ja">〜に<ruby>沿<rt>そ</rt></ruby>って</span></th><td>按照、沿着。</td></tr><tr><th><span class="jp" lang="ja">〜ところだった</span></th><td>差点发生，但没发生。</td></tr><tr><th><span class="jp" lang="ja">〜ばよかった</span></th><td>后悔：早知道就……</td></tr><tr><th><span class="jp" lang="ja">〜わけではない</span></th><td>并不是……</td></tr><tr><th><span class="jp" lang="ja">〜とは<ruby>限<rt>かぎ</rt></ruby>らない</span></th><td>未必……</td></tr><tr><th><span class="jp" lang="ja">〜たところ</span></th><td>刚刚做完。</td></tr>
+      </table>
+    </section>
+
+    <section class="block">
+      <h2>8. 情绪评价词</h2>
+      <table>
+        <tr><th>正向</th><td><div class="pills"><span><span class="jp" lang="ja">うれしい</span></span><span><span class="jp" lang="ja">ほっとした</span></span><span><span class="jp" lang="ja"><ruby>助<rt>たす</rt></ruby>かった</span></span><span><span class="jp" lang="ja"><ruby>満足<rt>まんぞく</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>楽<rt>たの</rt></ruby>しみ</span></span></div></td></tr><tr><th>负向</th><td><div class="pills"><span><span class="jp" lang="ja">がっかり</span></span><span><span class="jp" lang="ja"><ruby>残念<rt>ざんねん</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>困<rt>こま</rt></ruby>った</span></span><span><span class="jp" lang="ja"><ruby>不安<rt>ふあん</rt></ruby></span></span><span><span class="jp" lang="ja"><ruby>後悔<rt>こうかい</rt></ruby></span></span></div></td></tr><tr><th>微妙</th><td><div class="pills"><span><span class="jp" lang="ja"><ruby>複雑<rt>ふくざつ</rt></ruby></span></span><span><span class="jp" lang="ja">まあまあ</span></span><span><span class="jp" lang="ja"><ruby>微妙<rt>びみょう</rt></ruby></span></span><span><span class="jp" lang="ja">なんとも<ruby>言<rt>い</rt></ruby>えない</span></span></div></td></tr>
+      </table>
+      <p class="mini">观点题和心情题优先听评价词，不要只抓事实名词。</p>
+    </section>
+
+    <section class="block">
+      <h2>9. 连接词逻辑</h2>
+      <table>
+        <tr><th>逆接</th><td><div class="pills"><span><span class="jp" lang="ja">しかし</span></span><span><span class="jp" lang="ja">ただ</span></span><span><span class="jp" lang="ja">とはいえ</span></span><span><span class="jp" lang="ja">ところが</span></span></div></td></tr><tr><th>追加</th><td><div class="pills"><span><span class="jp" lang="ja">さらに</span></span><span><span class="jp" lang="ja">また</span></span><span><span class="jp" lang="ja">しかも</span></span><span><span class="jp" lang="ja">そのうえ</span></span></div></td></tr><tr><th>对比</th><td><div class="pills"><span><span class="jp" lang="ja"><ruby>一方<rt>いっぽう</rt></ruby>で</span></span><span><span class="jp" lang="ja">それに<ruby>対<rt>たい</rt></ruby>して</span></span><span><span class="jp" lang="ja">むしろ</span></span></div></td></tr><tr><th>总结</th><td><div class="pills"><span><span class="jp" lang="ja">つまり</span></span><span><span class="jp" lang="ja"><ruby>要<rt>よう</rt></ruby>するに</span></span><span><span class="jp" lang="ja">このように</span></span><span><span class="jp" lang="ja"><ruby>結局<rt>けっきょく</rt></ruby></span></span></div></td></tr><tr><th>例示</th><td><div class="pills"><span><span class="jp" lang="ja"><ruby>例<rt>たと</rt></ruby>えば</span></span><span><span class="jp" lang="ja">〜など</span></span><span><span class="jp" lang="ja">〜といった</span></span></div></td></tr>
+      </table>
+    </section>
+
+    <section class="block">
+      <h2>10. 考前 15 分钟</h2>
+      <ul><li>读一遍缩约形和即答功能，不背新词。</li><li>听一段自然日语，让耳朵进入日语频道。</li><li>快速复盘五类题：先做什么、指定点、主旨、自然回应、综合比较。</li><li>提醒自己：不要因上一题失误影响下一题。</li><li>最后检查铅笔、准考证、耳朵状态；考场只听一次，保持节奏。</li></ul>
+      <div class="warn">
+        <p><b>最容易多拿分的顺序：</b><ruby>即時応答<rt>そくじおうとう</rt></ruby> 功能判断 - <ruby>課題理解<rt>かだいりかい</rt></ruby> 排除法 - ポイント<ruby>理解<rt>りかい</rt></ruby> 真实理由 - <ruby>統合理解<rt>とうごうりかい</rt></ruby> 小表格。</p>
+      </div>
+    </section>
+
+    <section class="block span2">
+      <h2>11. 练习时的错题记录表</h2>
+      <table>
+        <tr><th>错因分类</th><td>最终决定 / 主语人物 / 否定句尾 / 数字更改 / 敬语角色 / 婉拒语气 / 主旨过窄。</td></tr><tr><th>复盘方式</th><td>只重听答案前后 20 秒，写下导致答案的信号词，不整篇泛听。</td></tr><tr><th>跟读重点</th><td>跟读包含 <span class="jp" lang="ja">でも</span>、<span class="jp" lang="ja">やっぱり</span>、<span class="jp" lang="ja"><ruby>実<rt>じつ</rt></ruby>は</span>、<span class="jp" lang="ja"><ruby>結局<rt>けっきょく</rt></ruby></span> 的句子。</td></tr><tr><th>目标</th><td>从“听懂大概”变成“听出出题点”。</td></tr>
+      </table>
+    </section>
+
+    <section class="block span2">
+      <h2>12. 最后确认清单</h2>
+      <ul><li>我是否等到句尾？</li><li>我是否确认了动作是谁做？</li><li>我是否把“出现过”的选项和“答案”分开了？</li><li>我是否注意到转折、变更、婉拒和合计？</li><li>主旨题是否选了能概括全文的答案，而不是一个例子？</li></ul>
+      <p class="mini">官方依据：JLPT Test Sections and Items（N2 Listening 50min）与 N2 item-purpose PDF。生成日期：2026-07-02。</p>
+    </section>
+  </div>
+
+  <footer>
+    <span>Print: A3 landscape, duplex long-edge. Ruby source retained in the HTML next to this PDF.</span>
+    <span>Page 2 / 2</span>
+  </footer>
+</section>
+
+</body>
+</html>
